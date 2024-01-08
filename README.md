@@ -1,6 +1,6 @@
 CS127 frontend 
 setup notes---------------------------
-
+- download react devtools for your browser https://react.dev/learn/react-developer-tools
 - install node js https://nodejs.org/en
 - create blank "npm" folder in your "C:\Users\yourname\AppData\Roaming" path
 - run "npx create-next-app@latest" in your IDE terminal (to install needed dependencies to run frontend)
