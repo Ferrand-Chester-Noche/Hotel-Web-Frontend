@@ -1,3 +1,27 @@
+CS127 frontend 
+setup notes---------------------------
+
+- install node js https://nodejs.org/en
+- create blank "npm" folder in your "C:\Users\yourname\AppData\Roaming" path
+- run "npx create-next-app@latest" in your IDE terminal (to install needed dependencies to run frontend)
+settings:
+typescript no
+eslint yes
+tailwind yes
+src no
+app router yes
+import alias no
+- run "npm install next" in your IDE terminal
+- delete the app folder you just created
+
+- create new folder anywhere
+- open git bash inside folder and run "git init"
+- clone this repository
+- open the cloned folder in IDE
+- run "npm run dev" to start application
+=========================================================
+=========================================================
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
