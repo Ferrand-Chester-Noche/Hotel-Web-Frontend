@@ -1,3 +1,4 @@
+import NavbarFront from '@/components/navbarfront';
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -7,6 +8,7 @@ import styles from '../../../styles/booking.css'; // Import your CSS file
 const BookingPage = () => {
   return (
     <div>
+      <NavbarFront />
       <BookingSidebar />
       <div>
         <form>

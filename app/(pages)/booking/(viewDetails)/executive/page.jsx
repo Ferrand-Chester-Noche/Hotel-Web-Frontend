@@ -1,7 +1,7 @@
 // DeluxeDetails.jsx
 import React from 'react';
 import BookingSidebar from '@/components/BookingSidebar.jsx';
-import styles from '../../../../../styles/booking.css'; // Import your CSS file
+import styles from '../../../../../styles/booking.css';
 import Link from 'next/link';
 
 const ExecDetails = () => {
