@@ -10,7 +10,7 @@ const Navbar = () => {
         <li><a href="/employeemgmt">Employee Management</a></li>
         <li><a href="/guestmgmt">Guest Management</a></li>
         <li><a href="/servicesmgmt">Services Management</a></li>
-        <li><a href="/login">Login</a></li>
+        <li><a href="/">Sign Out</a></li>
       </ul>
     </nav>
   );
