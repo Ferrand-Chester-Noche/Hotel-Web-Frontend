@@ -1,6 +1,7 @@
 // GuestDetails.jsx
 
 import React from 'react';
+import NavbarFront from '@/components/navbarfront';
 import BookingSidebar from '@/components/BookingSidebar.jsx';
 import styles from '../../../../../../styles/booking.css'; // Import your CSS file
 import NavbarFront from '@/components/navbarfront';
