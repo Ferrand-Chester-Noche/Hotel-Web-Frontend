@@ -33,19 +33,28 @@
     margin-bottom: 15px;
   }
   
-  /* Style for buttons */
   button {
-    padding: 8px 16px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
+    padding: 1px 20px; /* Generous spacing */
+    background-color: #8A596B; /* Deep plum color */
+    color: #fff; /* White text for contrast */
+    border: none; /* Remove default border */
+    border-radius: 10px; /* Full circle shape */
     cursor: pointer;
     margin-top: 10px;
+    transition: all 0.2s ease-in-out; /* Smooth transitions */
   }
   
+
+  /* Hover effects */
   button:hover {
-    background-color: #0056b3;
+    background-color: #E8EBFA;
+    color: #8A596B; /* Darker plum on hover */
+  }
+  
+  /* Focus effects */
+  button:focus {
+    outline: 2px solid #544998; /* Purple ring on focus */
+    box-shadow: 0 0 0 2px #544998; /* Inner shadow for depth */
   }
   
   /* Style for input boxes */

@@ -3,6 +3,7 @@ import React from 'react';
 import BookingSidebar from '@/components/BookingSidebar.jsx';
 import Link from 'next/link';
 import styles from '../../../../styles/booking.css'; // Import your CSS file
+import NavbarFront from '@/components/navbarfront';
 
 const ViewBooking = () => {
   const bookings = [

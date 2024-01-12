@@ -60,7 +60,6 @@ const LoginPage = () => {
       </Head>
       <div className='relative w-full h-screen overflow-hidden'>
         <div className='absolute inset-0 z-0'>
-          {/* Your background image */}
           <Image src="/loginbg.jpg" alt="background image" layout="fill" objectFit="cover" />
         </div>
         <div
