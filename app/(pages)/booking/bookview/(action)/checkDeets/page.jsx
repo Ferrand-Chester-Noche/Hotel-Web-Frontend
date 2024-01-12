@@ -4,6 +4,7 @@ import React from 'react';
 import NavbarFront from '@/components/navbarfront';
 import BookingSidebar from '@/components/BookingSidebar.jsx';
 import styles from '../../../../../../styles/booking.css'; // Import your CSS file
+import Link from 'next/link';
 
 const GuestDetails = () => {
   const guests = [
@@ -22,24 +23,27 @@ const GuestDetails = () => {
       <NavbarFront />
       <BookingSidebar />
       <div style={{ marginLeft: '250px' }}>
-      <div>
+
+      <div style={{marginTop: '40px', marginLeft:'40px', padding:'20px', width:'300px', height: 'auto', background: 'white', boxShadow: '0px 4px 4px rgba(0, 0, 0, 0.25)'}}>
         {guests.map((guest, index) => (
-          <div key={index} className={styles['guest-container']}>
-            <h2>Guest {index + 1} Details</h2>
+          <div key={index}>
+            <h2>Guest</h2>
             <p>Name: {guest.name}</p>
             <p>Birthday: {guest.birthday}</p>
             <p>Address: {guest.address}</p>
             <p>Contact Number: {guest.contactNumber}</p>
             <p>Email Address: {guest.emailAddress}</p>
             <div className={styles['button-group']}>
-              <button className={styles['check-in-button']}>Check-out</button>
-              <button className={styles['cancel-booking-button']}>
-                Close
-              </button>
+              <button styles>Check-out</button>
+              <br></br>
+              <Link href ="/booking/bookview">
+              <button> Close </button>
+              </Link>
             </div>
           </div>
         ))}
       </div>
+
     </div>
     </div>
   );

@@ -10,7 +10,7 @@ const BookingPage = () => {
     <div>
       <NavbarFront />
       <BookingSidebar />
-      <div style={{ marginLeft: '300px', marginTop: '70px', zIndex: '-1' }}>
+      <div style={{ marginLeft: '300px', marginTop: '0px', zIndex: '-1' }}>
 
       <div className="Title" 
         style={{ width: 440, height: 92, color: '#8A596B', fontSize: 85, fontFamily: 'Inter', fontWeight: '700', wordWrap: 'break-word'}}>
@@ -39,15 +39,26 @@ const BookingPage = () => {
       <div className="Rectangle1 mt-12 grid grid-cols-3 gap-0.5 " style={{width: 1391, height: 138, padding: '10px', background: 'white', boxShadow: '0px 4px 4px rgba(0, 0, 0, 0.25)'}} >    
             <form>
             <label>
-                *Number of Guests:
-                <input
-                  type="text"
-                  placeholder="1-9"
-                  pattern="[1-9]"
-                  className={styles.input}
-                  required
-                />
-            </label>
+    *Number of Guests:
+    <select className={styles.input}   style={{
+    width: 'calc(100% - 40px)',
+    marginBottom: '10px',
+    border: '1px solid #ccc',
+    borderRadius: '4px',
+    height: '45px'
+  }}required>
+      <option value="" disabled selected hidden>1-9</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="2">3</option>
+      <option value="2">4</option>
+      <option value="2">5</option>
+      <option value="2">6</option>
+      <option value="2">7</option>
+      <option value="2">8</option>
+      <option value="2">9</option>
+    </select>
+  </label>
             <button className={styles.button}>Check Availability</button>
               </form>
             <form>
