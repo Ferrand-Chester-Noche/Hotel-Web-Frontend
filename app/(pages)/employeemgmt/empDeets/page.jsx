@@ -1,7 +1,7 @@
 // EmployeeDetails.jsx
 
 import React from 'react';
-import NavbarFront from '@/components/navbarfront';
+import NavbarAdmin from '@/components/navbaradmin';
 import Link from 'next/link';
 
 const EmployeeDetails = () => {
@@ -18,7 +18,7 @@ const EmployeeDetails = () => {
 
   return (
     <div>
-      <NavbarFront />
+      <NavbarAdmin />
       <div>
         <div>
           {employees.map((employee, index) => (

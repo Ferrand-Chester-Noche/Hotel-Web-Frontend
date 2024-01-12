@@ -29,11 +29,11 @@ const BookingHistory = () => {
             <input type="text" />
           </label>
           <br></br>
-          <label>
-            Bill:<br></br>
-            <input type="number" />
-          </label>
         </form>
+
+        <p>Bill:</p>
+
+        
         <table className={styles['booking-history-table']}>
           <thead>
             <tr>

@@ -65,10 +65,10 @@ const BookingPage = () => {
                 </label>
             </form>
       </div>
-      <div style={{width: 224, height: 38, color: 'black', fontSize: 23, fontFamily: 'Inter', fontWeight: '400', wordWrap: 'break-word', marginTop:"30px"}}>Available rooms: </div>
+      <div style={{width: 224, height: 38, color: 'black', fontSize: 23, fontFamily: 'Inter', fontWeight: '400', wordWrap: 'break-word', marginTop:"20px"}}>Available rooms: </div>
 
       <div className="grid grid-cols-4 gap-0.5 w-3/4">
-            <div className="container" style={{position: 'relative', width: 340, height: 350, left: 9, top: 0, background: '#FAFAFA', boxShadow: '0px 4px 4px rgba(0, 0, 0, 0.25)', borderRadius: 50}}>
+            <div className="container" style={{position: 'relative', scale:0.8, width: 340, height: 350, left: 9, top: 0, background: '#FAFAFA', boxShadow: '0px 4px 4px rgba(0, 0, 0, 0.25)', borderRadius: 50}}>
                 <Image src="/deluxe1.jpg" alt="Deluxe Room" width={400} height={400} style={{borderRadius: 30}} />
                 <h2 style={{ position: 'absolute', top: '50px', left: '87px', fontSize: '50px', color: '#dec7d7', fontWeight:'bold', fontFamily: 'Georgia, serif' }}>Deluxe</h2>
                 <p>
@@ -84,7 +84,7 @@ const BookingPage = () => {
               </Link>
             </div>
 
-            <div className="container" style={{position: 'relative', width: 340, height: 350, left: 9, top: 0, background: '#FAFAFA', boxShadow: '0px 4px 4px rgba(0, 0, 0, 0.25)', borderRadius: 50}}>
+            <div className="container" style={{position: 'relative', scale:0.8, width: 340, height: 350, left: 9, top: 0, background: '#FAFAFA', boxShadow: '0px 4px 4px rgba(0, 0, 0, 0.25)', borderRadius: 50}}>
                 <Image src="/grand1.jpg" alt="Grand Room" width={400} height={400} style={{borderRadius: 30}} />
                 <h2 style={{ position: 'absolute', top: '50px', left: '87px', fontSize: '50px', color: '#dec7d7', fontWeight:'bold', fontFamily: 'Georgia, serif' }}>Grand</h2>
                 <p>
@@ -100,7 +100,7 @@ const BookingPage = () => {
               </Link>
             </div>
 
-            <div className="container" style={{position: 'relative', width: 340, height: 350, left: 9, top: 0, background: '#FAFAFA', boxShadow: '0px 4px 4px rgba(0, 0, 0, 0.25)', borderRadius: 50}}>
+            <div className="container" style={{position: 'relative', scale:0.8, width: 340, height: 350, left: 9, top: 0, background: '#FAFAFA', boxShadow: '0px 4px 4px rgba(0, 0, 0, 0.25)', borderRadius: 50}}>
                 <Image src="/suite1.jpg" alt="Suite Room" width={400} height={400} style={{borderRadius: 30}} />
                 <h2 style={{ position: 'absolute', top: '50px', left: '105px', fontSize: '50px', color: '#dec7d7', fontWeight:'bold', fontFamily: 'Georgia, serif' }}>Suite</h2>
                 <p>
@@ -115,7 +115,7 @@ const BookingPage = () => {
                 View Details
               </Link>
             </div>
-            <div className="container" style={{position: 'relative', width: 340, height: 350, left: 9, top: 0, background: '#FAFAFA', boxShadow: '0px 4px 4px rgba(0, 0, 0, 0.25)', borderRadius: 50}}>
+            <div className="container" style={{position: 'relative', scale:0.8, width: 340, height: 350, left: 9, top: 0, background: '#FAFAFA', boxShadow: '0px 4px 4px rgba(0, 0, 0, 0.25)', borderRadius: 50}}>
                 <Image src="/executive1.jpg" alt="Suite Room" width={400} height={200} style={{borderRadius: 30}} />
                 <h2 style={{ position: 'absolute', top: '50px', left: '47px', fontSize: '50px', color: '#dec7d7', fontWeight:'bold', fontFamily: 'Georgia, serif' }}>Executive</h2>
                 <p>

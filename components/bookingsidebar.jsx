@@ -91,7 +91,7 @@ const BookingSidebar = () => {
               transition: 'background-color 0.3s ease, color 0.3s ease',
             }}
           >
-            <HiOutlineClock className="mr-2 text-xl" /> Booking History
+            <HiOutlineClock className="mr-2 text-xl" /> Billing & History
           </a>
         </li>
       </ul>
