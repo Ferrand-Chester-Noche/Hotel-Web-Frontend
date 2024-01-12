@@ -6,12 +6,14 @@ import styles from '../../../../styles/booking.css'; // Import your CSS file
 import NavbarFront from '@/components/navbarfront';
 
 const BookNow = () => {
+
+
   
   return (
     <div>
       <NavbarFront />
       <BookingSidebar />
-      <div style={{ marginLeft: '300px', marginTop: '70px', zIndex: '-1'}}>
+      <div style={{ marginLeft: '300px', marginTop: '0px', zIndex: '-1'}}>
 
       <div className="Title" 
         style={{ width: 440, height: 92, color: '#8A596B', fontSize: 85, fontFamily: 'Inter', fontWeight: '700', wordWrap: 'break-word'}}>
@@ -22,7 +24,7 @@ const BookNow = () => {
         Select the best room for your customers.
       </div>
 
-      <div className="flex mt-5">
+      <div className="flex mt-5" style={{zIndex: '-1'}}>
       <div className="flex gap-20">
         <a href="/booking" className= "relative text-m w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-[#8A596B] after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center">
           <img src="/b31.png" alt="Button 1" className="w-40 cursor-pointer" />
@@ -37,35 +39,36 @@ const BookNow = () => {
     </div>
 
 
-      <div className="container" /* Apply styles from the imported CSS file */>
+      <div className="container" style={{ width: '50%', marginTop: '30px' }} >
         <h2>Enter primary guest details</h2>
         <form>
           <label>
-            FirstName:
+            First Name
             <input type="text" placeholder="First name" className={styles.input} /* Apply input styles */ />
           </label>
           <label>
-            MiddleName:
+            Middle Name
             <input type="text" placeholder="Middle name" className={styles.input} /* Apply input styles */ />
           </label>
           <label>
-            LastName:
+            <br></br>
+            Last Name
             <input type="text" placeholder="Last name" className={styles.input} /* Apply input styles */ />
           </label>
           <label>
-            Birthday:
+            Birthday
             <input type="date" className={styles.input} /* Apply input styles */ />
           </label>
           <label>
-            Address:
+            Address
             <input type="text" placeholder="Enter address" className={styles.input} /* Apply input styles */ />
           </label>
           <label>
-            Contact Number:
+            Contact Number
             <input type="tel" placeholder="Enter contact number" className={styles.input} /* Apply input styles */ />
           </label>
           <label>
-            Email Address:
+            Email Address
             <input type="email" placeholder="Enter email address" className={styles.input} /* Apply input styles */ />
           </label>
           <button className={styles.button}>Add other guests</button>
@@ -74,9 +77,10 @@ const BookNow = () => {
       <div>
         <br></br>  
         <Link href="/booking/booknow/checkinDeets">
-          <button className={styles.button}>continue</button>
+          <button className={styles.button}>Confirm Booking</button>
         </Link>      
       </div>
+      <div style={{padding: '50px'}}></div>
     </div>
     </div>
   );

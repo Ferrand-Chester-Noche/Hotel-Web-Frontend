@@ -11,7 +11,7 @@ const BookingDetails = () => {
     <div>
       <NavbarFront />
       <BookingSidebar />
-      <div style={{ marginLeft: '300px', marginTop: '70px', zIndex: '-1'}}>
+      <div style={{ marginLeft: '300px', marginTop: '0px', zIndex: '-1'}}>
       
       <div className="Title" 
         style={{ width: 440, height: 92, color: '#8A596B', fontSize: 85, fontFamily: 'Inter', fontWeight: '700', wordWrap: 'break-word'}}>
@@ -37,24 +37,26 @@ const BookingDetails = () => {
       </div>
     </div>
 
-      
-      <div>
-        <h2>Booking Details:</h2>
+
+    <h2 style={{marginTop: '20px'}}>Confirm Booking Details</h2>
+      <div style={{marginTop: '20px', padding:'20px', width:'300px', height: 'auto', background: 'white', boxShadow: '0px 4px 4px rgba(0, 0, 0, 0.25)'}}>
+  
+        <p>Booking date: -- -- --</p>
         <p>Check in Date: -- -- --</p>
         <p>Check out Date: -- -- --</p>
-
-        <div className="box">
-          <h3>Booking date:</h3>
-          <p>Guest Names:</p>
-          <p>Room Type/s and Qty:</p>
+          <p>Primary Guest:</p>
+          <p>Room Type/s and Quantity:</p><br></br>
           <p>Room Numbers:</p>
-        </div>
-        <Link href="/booking">
-          <button className={styles.button}>+book another room</button>
+          <br></br>
+
+          
+        <Link className="flex justify-center" href="/booking">
+          <button className={styles.button}>+ Book Another Room</button>
         </Link> 
         <br></br>
-        <button className={styles.button}>confirm booking</button>   
+          
       </div>
+      <button className={styles.button} style={{marginTop: '40px'}}>Confirm Booking</button> 
     </div>
     </div>
     

@@ -135,3 +135,34 @@
     opacity: 1;
   }
   
+
+
+table-container {
+  margin-left: 300px;
+  margin-top: 40px;
+}
+
+table {
+  width: 90%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+  background-color: #f2f2f2;
+}
+
+tr {
+  border: 1px solid #ddd;
+  margin-top: 10px;
+  background-color: #fff;
+}
+
+td {
+  padding: 8px;
+}
+
+

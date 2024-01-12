@@ -19,6 +19,7 @@ const EmployeeDetails = () => {
   return (
     <div>
       <NavbarAdmin />
+      
       <div>
         <div>
           {employees.map((employee, index) => (
