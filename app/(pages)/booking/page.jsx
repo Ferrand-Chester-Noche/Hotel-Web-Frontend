@@ -95,7 +95,7 @@ const BookingPage = () => {
                 <button p style={{position: 'relative', bottom: '10px'}}>Book Now</button>
               </Link>
               <p></p>
-              <Link style={{fontSize: '13px',position: 'relative', bottom: '19px'}} className="underline text-[#8A596B] hover:text-[#E8EBFA]" href="http://localhost:3000/booking/deluxe">
+              <Link style={{fontSize: '13px',position: 'relative', bottom: '19px'}} className="underline text-[#8A596B] hover:text-[#E8EBFA]" href="http://localhost:3000/booking/grand">
                 View Details
               </Link>
             </div>
@@ -111,7 +111,7 @@ const BookingPage = () => {
                 <button p style={{position: 'relative', bottom: '10px'}}>Book Now</button>
               </Link>
               <p></p>
-              <Link style={{fontSize: '13px',position: 'relative', bottom: '19px'}} className="underline text-[#8A596B] hover:text-[#E8EBFA]" href="http://localhost:3000/booking/deluxe">
+              <Link style={{fontSize: '13px',position: 'relative', bottom: '19px'}} className="underline text-[#8A596B] hover:text-[#E8EBFA]" href="http://localhost:3000/booking/suite">
                 View Details
               </Link>
             </div>
@@ -126,7 +126,7 @@ const BookingPage = () => {
                 <button p style={{position: 'relative', bottom: '10px'}}>Book Now</button>
               </Link>
               <p></p>
-              <Link style={{fontSize: '13px',position: 'relative', bottom: '19px'}} className="underline text-[#8A596B] hover:text-[#E8EBFA]" href="http://localhost:3000/booking/deluxe">
+              <Link style={{fontSize: '13px',position: 'relative', bottom: '19px'}} className="underline text-[#8A596B] hover:text-[#E8EBFA]" href="http://localhost:3000/booking/executive">
                 View Details
               </Link>
             </div>
