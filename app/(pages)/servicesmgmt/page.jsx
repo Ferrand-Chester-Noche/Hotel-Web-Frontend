@@ -19,6 +19,8 @@ const ServicesManagementPage = () => {
     console.log('BRN:', brn);
     console.log('Quantity Housekeeping:', quantityHousekeeping);
     console.log('Quantity Kitchen:', quantityKitchen);
+
+    // let response = await fetch('http://localhost:8080/')
   };
 
   return (
