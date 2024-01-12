@@ -76,7 +76,8 @@ console.log('Quantity Kitchen:', quantityKitchen);
 
         <button className={styles['static-button']} type="submit" style={{ color: 'black' }}>
           Add to Bill
-        </button>      </div>
+        </button>      
+      </div>
     </div>
   );
 };
