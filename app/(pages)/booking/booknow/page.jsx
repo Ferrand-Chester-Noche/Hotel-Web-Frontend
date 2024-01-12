@@ -6,6 +6,7 @@ import styles from '../../../../styles/booking.css'; // Import your CSS file
 import NavbarFront from '@/components/navbarfront';
 
 const BookNow = () => {
+  
   return (
     <div>
       <NavbarFront />
@@ -23,13 +24,13 @@ const BookNow = () => {
 
       <div className="flex mt-5">
       <div className="flex gap-20">
-        <a href="/booking" className= "relative text-m w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-[#8A596B] after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center">
+        <a className= "relative text-m w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-[#8A596B] after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center">
           <img src="/b31.png" alt="Button 1" className="w-40 cursor-pointer" />
         </a>
-        <a href="/booking/booknow" className= " transform scale-110 mr-4 relative text-m w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-[#E8EBFA] after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center">
+        <a className= " transform scale-110 mr-4 relative text-m w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-[#E8EBFA] after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center">
           <img src="/b22.png" alt="Button 2" className="w-40 cursor-pointer" />
         </a>
-        <a href="/booking/booknow/checkinDeets" className= "relative text-m w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-[#8A596B] after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center">
+        <a className= "relative text-m w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-[#8A596B] after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center">
           <img src="/b13.png" alt="Button 3" className="w-40 cursor-pointer" />
         </a>
       </div>
@@ -40,8 +41,16 @@ const BookNow = () => {
         <h2>Enter primary guest details</h2>
         <form>
           <label>
-            Name:
-            <input type="text" placeholder="Enter name" className={styles.input} /* Apply input styles */ />
+            FirstName:
+            <input type="text" placeholder="First name" className={styles.input} /* Apply input styles */ />
+          </label>
+          <label>
+            MiddleName:
+            <input type="text" placeholder="Middle name" className={styles.input} /* Apply input styles */ />
+          </label>
+          <label>
+            LastName:
+            <input type="text" placeholder="Last name" className={styles.input} /* Apply input styles */ />
           </label>
           <label>
             Birthday:
@@ -60,7 +69,6 @@ const BookNow = () => {
             <input type="email" placeholder="Enter email address" className={styles.input} /* Apply input styles */ />
           </label>
           <button className={styles.button}>Add other guests</button>
-          <button type="submit" className={styles.button}>Check-in</button>
         </form>
       </div>
       <div>
