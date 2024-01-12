@@ -1,8 +1,24 @@
-import React from 'react';
+'use client';
+import React, { useState } from 'react';
 import NavbarAdmin from '@/components/navbaradmin';
 import styles from '../../../styles/booking.css'; // Import your CSS file
 
 const ServicesManagementPage = () => {
+  // State variables for BRN, charges, and service details
+  const [brn, setBrn] = useState('');
+  const [quantityHousekeeping, setQuantityHousekeeping] = useState('');
+  const [quantityKitchen, setQuantityKitchen] = useState('');
+
+  // Function to handle form submission
+  const handleFormSubmit = (event) => {
+  event.preventDefault();
+
+// Perform actions with the saved data (e.g., send to server)
+console.log('BRN:', brn);
+console.log('Quantity Housekeeping:', quantityHousekeeping);
+console.log('Quantity Kitchen:', quantityKitchen);
+};
+  
   return (
     <div>
       <NavbarAdmin />
@@ -58,7 +74,7 @@ const ServicesManagementPage = () => {
           </table>
         </div>
 
-        <button className={styles['static-button']}>Add to Bill</button>
+        <button className={styles['static-button']} type="submit">Add to Bill</button>
       </div>
     </div>
   );
