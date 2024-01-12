@@ -2,12 +2,15 @@
 import React from 'react';
 import BookingSidebar from '@/components/BookingSidebar.jsx';
 import styles from '../../../../../styles/booking.css'; // Import your CSS file
+import NavbarFront from '@/components/navbarfront';
 
 
 const BookingDetails = () => {
   return (
     <div>
+      <NavbarFront />
       <BookingSidebar />
+      <div style={{ marginLeft: '250px' }}>
       <div>
         <h2>Booking Details:</h2>
         <p>Check in Date: -- -- --</p>
@@ -21,6 +24,7 @@ const BookingDetails = () => {
         </div>
         <button className={styles.button}>confirm booking</button>   
       </div>
+    </div>
     </div>
     
   );

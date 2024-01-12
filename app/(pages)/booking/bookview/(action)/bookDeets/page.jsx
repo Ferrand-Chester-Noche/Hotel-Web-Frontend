@@ -3,6 +3,7 @@
 import React from 'react';
 import BookingSidebar from '@/components/BookingSidebar.jsx';
 import styles from '../../../../../../styles/booking.css'; // Import your CSS file
+import NavbarFront from '@/components/navbarfront';
 
 const GuestDetails = () => {
   const guests = [
@@ -18,7 +19,9 @@ const GuestDetails = () => {
 
   return (
     <div>
+      <NavbarFront />
       <BookingSidebar />
+      <div style={{ marginLeft: '250px' }}>
       <div>
         {guests.map((guest, index) => (
           <div key={index} className={styles['guest-container']}>
@@ -37,6 +40,7 @@ const GuestDetails = () => {
           </div>
         ))}
       </div>
+    </div>
     </div>
   );
 };

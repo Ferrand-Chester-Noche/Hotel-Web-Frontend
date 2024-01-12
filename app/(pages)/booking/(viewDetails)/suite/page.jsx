@@ -3,11 +3,14 @@ import React from 'react';
 import BookingSidebar from '@/components/BookingSidebar.jsx';
 import styles from '../../../../../styles/booking.css'; // Import your CSS file
 import Link from 'next/link';
+import NavbarFront from '@/components/navbarfront';
 
 const SuiteDetails = () => {
   return (
     <div>
-        <BookingSidebar />
+      <NavbarFront />
+      <BookingSidebar />
+      <div style={{ marginLeft: '250px' }}>
        <div>
             <h2>Type: Suite</h2>
             <p>Price per night: $17,500</p>
@@ -26,6 +29,7 @@ const SuiteDetails = () => {
                 <button className={styles.button}>back</button>
             </Link> 
         </div> 
+    </div>
     </div>
     
   );

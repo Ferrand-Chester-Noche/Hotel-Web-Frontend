@@ -3,6 +3,7 @@
 import React from 'react';
 import BookingSidebar from '@/components/BookingSidebar.jsx';
 import styles from '../../../../styles/booking.css'; // Import your CSS file
+import NavbarFront from '@/components/navbarfront';
 
 const BookingHistory = () => {
   const bookings = [
@@ -17,7 +18,9 @@ const BookingHistory = () => {
 
   return (
     <div>
+      <NavbarFront />
       <BookingSidebar />
+      <div style={{ marginLeft: '250px' }}>
       <div className={styles['booking-history']}>
         <h2>Booking History</h2>
         <form className={styles['booking-history-form']}>
@@ -52,6 +55,7 @@ const BookingHistory = () => {
           </tbody>
         </table>
       </div>
+    </div>
     </div>
   );
 };

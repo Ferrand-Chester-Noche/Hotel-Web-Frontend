@@ -18,7 +18,9 @@ const GuestDetails = () => {
 
   return (
     <div>
+      <NavbarFront />
       <BookingSidebar />
+      <div style={{ marginLeft: '250px' }}>
       <div>
         {guests.map((guest, index) => (
           <div key={index} className={styles['guest-container']}>
@@ -37,6 +39,7 @@ const GuestDetails = () => {
           </div>
         ))}
       </div>
+    </div>
     </div>
   );
 };

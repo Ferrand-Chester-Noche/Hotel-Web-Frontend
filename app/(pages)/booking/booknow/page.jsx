@@ -3,11 +3,14 @@ import React from 'react';
 import Link from 'next/link';
 import BookingSidebar from '@/components/BookingSidebar.jsx';
 import styles from '../../../../styles/booking.css'; // Import your CSS file
+import NavbarFront from '@/components/navbarfront';
 
 const BookNow = () => {
   return (
     <div>
+      <NavbarFront />
       <BookingSidebar />
+      <div style={{ marginLeft: '250px' }}>
       <div className="container" /* Apply styles from the imported CSS file */>
         <h2>Enter primary guest details</h2>
         <form>
@@ -44,6 +47,7 @@ const BookNow = () => {
           <button className={styles.button}>continue</button>
         </Link>      
       </div>
+    </div>
     </div>
   );
 };

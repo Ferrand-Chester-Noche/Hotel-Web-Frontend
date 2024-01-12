@@ -10,6 +10,7 @@ const BookingPage = () => {
     <div>
       <NavbarFront />
       <BookingSidebar />
+      <div style={{ marginLeft: '250px' }}>
       <div>
         <form>
           <label>
@@ -60,6 +61,7 @@ const BookingPage = () => {
           </Link>
         </div>
       </div>
+    </div>
     </div>
   );
 };

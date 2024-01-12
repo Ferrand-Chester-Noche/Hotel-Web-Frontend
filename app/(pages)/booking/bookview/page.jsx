@@ -16,7 +16,9 @@ const ViewBooking = () => {
 
   return (
     <div>
+      <NavbarFront />
       <BookingSidebar />
+      <div style={{ marginLeft: '250px' }}>
       <div>
         <table>
           <thead>
@@ -54,6 +56,7 @@ const ViewBooking = () => {
           </tbody>
         </table>
       </div>
+    </div>
     </div>
   );
 };
