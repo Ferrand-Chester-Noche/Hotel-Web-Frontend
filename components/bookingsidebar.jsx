@@ -53,7 +53,7 @@ const BookingSidebar = () => {
           }}
         >
           <a
-            href="/booking"
+            href="/booking/bookview"
             className='flex items-center py-2 px-4 rounded transition duration-300 ease-in-out hover:bg-[#E8EBFA] hover:text-[#51708a]'
             style={{
               textDecoration: 'none',
@@ -77,7 +77,7 @@ const BookingSidebar = () => {
           }}
         >
           <a
-            href="/booking"
+            href="/booking/bookhist"
             className='flex items-center py-2 px-4 rounded transition duration-300 ease-in-out hover:bg-[#E8EBFA] hover:text-[#51708a]'
             style={{
               textDecoration: 'none',
