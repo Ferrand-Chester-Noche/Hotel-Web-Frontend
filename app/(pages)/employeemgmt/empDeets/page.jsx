@@ -8,8 +8,8 @@ const EmployeeDetails = () => {
   const employees = [
     {
       name: 'John Doe',
-      position: 'Developer',
-      department: 'Engineering',
+      position: 'Housekeeper',
+      department: '-',
       contactNumber: '+1234567890',
       emailAddress: 'john.doe@example.com',
     },
