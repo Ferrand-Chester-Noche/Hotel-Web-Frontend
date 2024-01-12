@@ -4,6 +4,7 @@
 import React, { useState } from 'react';
 import NavbarAdmin from '@/components/navbaradmin';
 import styles from '../../../styles/booking.css'; // Import your CSS file
+import bookingPageStyles from '../../../styles/bookingPageStyles.css'; // Import the new CSS file
 
 const ServicesManagementPage = () => {
   // State variables for BRN, charges, and service details
@@ -22,9 +23,9 @@ const ServicesManagementPage = () => {
   };
 
   return (
-    <div>
+    <div className={bookingPageStyles['container-wrapper']}>
       <NavbarAdmin />
-      <div>
+      <div className={bookingPageStyles['container']}>
         <form className={styles['booking-history-form']} onSubmit={handleFormSubmit}>
           <label>
             Enter BRN:

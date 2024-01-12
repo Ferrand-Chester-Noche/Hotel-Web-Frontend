@@ -1,0 +1,77 @@
+/* bookingPageStyles.css */
+
+.container-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .container {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    width: 200px;
+    text-align: center;
+    margin: 10px;
+  }
+  
+  /* Additional Styles */
+  
+  /* Form Styles */
+  .booking-history-form label {
+    color: #8A596B; /* Font color for labels */
+  }
+  
+  /* Billing Statement Styles */
+  .booking-history-form div p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #8A596B; /* Font color for billing statement */
+  }
+  
+  /* Charges List Styles */
+  .booking-history-form div ul {
+    list-style-type: disc;
+    color: #8A596B; /* Font color for list items */
+  }
+  
+  /* Table Styles */
+  .booking-history-form table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .booking-history-form th,
+  .booking-history-form td {
+    border: 1px solid #623744; /* Header border color */
+    padding: 8px;
+  }
+  
+  .booking-history-form th {
+    background-color: #623744; /* Header background color */
+    color: #fff;
+  }
+  
+  .booking-history-form td {
+    background-color: #f6cdc9; /* Content background color */
+    color: #623744; /* Font color for content */
+  }
+  
+  /* Add to Bill Button Styles */
+  .booking-history-form button {
+    background-color: #623744;
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .booking-history-form button:hover {
+    background-color: #623744;
+  }
+  
