@@ -7,65 +7,69 @@ const EmployeeManagementPage = () => {
   return (
     <div>
       <NavbarAdmin />
-      <div style={{ marginLeft: '50px', marginTop: '50px', zIndex: '-1' }}>
+      <div style={{ marginLeft: '50px', marginTop: '4px', zIndex: '-1' }}>
 
-<div className="Title" 
-  style={{ width: 1000, height: 92, color: '#8A596B', fontSize: 50, fontFamily: 'Inter', fontWeight: '700'}}>
-  Manage Employee Payroll
-</div>
+        <div className="Title"
+          style={{ width: 'auto', height: 92, color: '#8A596B', fontSize: 85, fontFamily: 'Inter', fontWeight: '700' }}>
+          Manage Payroll
+        </div>
+
+        <br></br>
+        <br></br>
 
 
 
-      <table border="1" style={{ borderCollapse: 'collapse', width: '80%' }}>
-        <thead>
-          <tr>
-           <th style={{ border: '1px solid black' }}>EmployeeID</th>
-            <th style={{ border: '1px solid black' }}>Employee Name</th>
-            <th style={{ border: '1px solid black' }}>Employee Type</th>
-            <th style={{ border: '1px solid black' }}>Action</th>
-            <th style={{ border: '1px solid black' }}>Payroll</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th style={{ border: '1px solid black' }}>1</th>
-            <td style={{ border: '1px solid black' }}>John Doe</td>
-            <td style={{ border: '1px solid black' }}>Housekeeper</td>
-            <td style={{ border: '1px solid black' }}>
-              <Link href="http://localhost:3000/employeemgmt/empDeets">
-                <button style={{ cursor: 'pointer' }}>Edit</button>
-              </Link>
-            </td>
-            <th style={{ border: '1px solid black' }}>0</th>
-          </tr>
-          <tr>
-            <th style={{ border: '1px solid black' }}>2</th>
-            <td style={{ border: '1px solid black' }}>Jane Doe</td>
-            <td style={{ border: '1px solid black' }}>Concierge</td>
-            <td style={{ border: '1px solid black' }}>
-              <Link href="http://localhost:3000/employeemgmt/empDeets">
-                <button p style={{ cursor: 'pointer' }}>Edit</button>
-              </Link>
-            </td>
-            <th style={{ border: '1px solid black' }}>0</th>
-          </tr>
-          {/* Add more rows as needed */}
-        </tbody>
-        <tfoot>
-          <tr>
-           <th style={{ border: '1px solid black' }}></th>
-            <th style={{ border: '1px solid black' }}></th>
-            <th style={{ border: '1px solid black' }}></th>
-            <th style={{ border: '1px solid black' }}></th>
-            <th style={{ border: '1px solid black' }}>Total: 0</th>
-          </tr>
-        </tfoot>
-      </table>
-      <button>Submit Payroll</button>
+        <table >
+          <thead>
+            <tr>
+              <th >EmployeeID</th>
+              <th >Employee Name</th>
+              <th >Employee Type</th>
+              <th >Action</th>
+              <th >Payroll</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td >1</td>
+              <td >John Doe</td>
+              <td >Housekeeper</td>
+              <td >
+                <Link href="http://localhost:3000/employeemgmt/empDeets">
+                  <button >Edit</button>
+                </Link>
+              </td>
+              <th >0</th>
+            </tr>
+            <tr>
+              <td >2</td>
+              <td >Jane Doe</td>
+              <td >Concierge</td>
+              <td >
+                <Link href="http://localhost:3000/employeemgmt/empDeets">
+                  <button style={{ alignItems: 'center' }}>Edit</button>
+                </Link>
+              </td>
+              <th >0</th>
+            </tr>
+            {/* Add more rows as needed */}
+          </tbody>
+          <tfoot>
+            <tr>
+              <th ></th>
+              <th ></th>
+              <th ></th>
+              <th ></th>
+              <th >Total: 0</th>
+            </tr>
+          </tfoot>
+        </table>
+        <br></br>
+        <button>Submit Payroll</button>
       </div>
     </div>
 
-    
+
   );
 };
 

@@ -138,38 +138,23 @@
 }
 
 /* Table Styles */
-.booking-history-form table {
-  width: 100%;
+table {
+  width: 70%;
   border-collapse: collapse;
 }
 
-.booking-history-form th,
-.booking-history-form td {
+th, td {
   border: 1px solid #623744; /* Header border color */
-  padding: 8px;
+  padding: 6px;
 }
 
-.booking-history-form th {
+th {
   background-color: #623744; /* Header background color */
   color: #fff;
 }
 
-.booking-history-form td {
+td {
   background-color: #f6cdc9; /* Content background color */
   color: #623744; /* Font color for content */
 }
 
-/* Add to Bill Button Styles */
-.booking-history-form button {
-  background-color: #623744;
-  color: #fff;
-  padding: 8px 16px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  margin-top: 10px;
-}
-
-.booking-history-form button:hover {
-  background-color: #623744;
-}

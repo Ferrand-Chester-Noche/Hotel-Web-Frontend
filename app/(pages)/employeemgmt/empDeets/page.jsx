@@ -21,7 +21,7 @@ const EmployeeDetails = () => {
       <NavbarAdmin />
       
       <div>
-        <div>
+      <div style={{marginTop: '40px', marginLeft:'40px', padding:'20px', width:'300px', height: 'auto', background: 'white', boxShadow: '0px 4px 4px rgba(0, 0, 0, 0.25)'}}>
           {employees.map((employee, index) => (
             <div>
               <h2>Employee {index + 1} Details</h2>
@@ -31,11 +31,8 @@ const EmployeeDetails = () => {
               <p>Contact Number: {employee.contactNumber}</p>
               <p>Email Address: {employee.emailAddress}</p>
               <div>
-                <button>Edit</button>
-              </div>
-              <div>
               <Link href="http://localhost:3000/employeemgmt">
-                 <button>back</button>
+                 <button>Go Back</button>
               </Link>
               </div>
             </div>

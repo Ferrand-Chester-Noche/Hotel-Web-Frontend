@@ -21,7 +21,7 @@ const NavbarService = () => {
   // };
 
   return (
-    <div>
+    <div style={{zIndex:'3'}}>
     <div style={{ height: '145px' }}></div>
     <div className="fixed top-0 left-0 w-full">
       <nav className="border-gray-200" style={{ backgroundColor: '#563643' }}>
