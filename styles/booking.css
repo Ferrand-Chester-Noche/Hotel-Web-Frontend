@@ -43,6 +43,18 @@
     margin-top: 10px;
     transition: all 0.2s ease-in-out; /* Smooth transitions */
   }
+
+  button[type="submit"] {
+    padding: 1px 20px; /* Generous spacing */
+    background-color: #8A596B; /* Deep plum color */
+    color: #fff; /* White text for contrast */
+    border: none; /* Remove default border */
+    border-radius: 10px; /* Full circle shape */
+    cursor: pointer;
+    margin-top: 10px;
+    transition: all 0.2s ease-in-out; /* Smooth transitions */
+  }
+  
   
 
   /* Hover effects */
@@ -51,6 +63,7 @@
     color: #8A596B; /* Darker plum on hover */
   }
   
+
   /* Focus effects */
   button:focus {
     outline: 2px solid #544998; /* Purple ring on focus */

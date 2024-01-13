@@ -25,10 +25,10 @@ const ServicesManagementPage = () => {
   };
 
   return (
-    <div className={styles['container-wrapper']}>
+    <div>
       <NavbarAdmin />
-      <div className={styles['container']}>
-        <form className={styles['booking-history-form']} onSubmit={handleFormSubmit}>
+      <div >
+        <form  onSubmit={handleFormSubmit}>
           <label>
             Enter BRN:
             <input type="text" value={brn} onChange={(e) => setBrn(e.target.value)} />
@@ -86,7 +86,7 @@ const ServicesManagementPage = () => {
             </table>
           </div>
 
-          <button className={styles.button} type="submit" style={{ color: 'black' }}>
+          <button type="submit" style={{ color: 'black' }}>
             Add to Bill
           </button>
         </form>
