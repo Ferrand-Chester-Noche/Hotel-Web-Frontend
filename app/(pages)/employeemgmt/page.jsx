@@ -36,7 +36,7 @@ const EmployeeManagementPage = () => {
               <td >Housekeeper</td>
               <td >
                 <Link href="http://localhost:3000/employeemgmt/empDeets">
-                  <button >Edit</button>
+                  <button >View Details</button>
                 </Link>
               </td>
               <th >0</th>
@@ -47,7 +47,7 @@ const EmployeeManagementPage = () => {
               <td >Concierge</td>
               <td >
                 <Link href="http://localhost:3000/employeemgmt/empDeets">
-                  <button style={{ alignItems: 'center' }}>Edit</button>
+                  <button style={{ alignItems: 'center' }}>View Details</button>
                 </Link>
               </td>
               <th >0</th>
