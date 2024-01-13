@@ -26,10 +26,10 @@ const DeluxeDetails = () => {
         </div>
 
 
-        <div style={{ position: 'relative', width: '1425px' }}>
+        <div style={{ position: 'relative', width: '1425px'}}>
 
           <section>
-            <div class="slider-wrapper" style={{ maxWidth: '600px', marginRight:'300px' }}>
+            <div class="slider-wrapper" style={{ maxWidth: '700px', marginLeft: '890px' }}>
               <div class="slider">
                 <img id="slide-1" src="/d1.jpg" alt="pic1" />
                 <img id="slide-2" src="/deluxe2.jpg" alt="pic2" />

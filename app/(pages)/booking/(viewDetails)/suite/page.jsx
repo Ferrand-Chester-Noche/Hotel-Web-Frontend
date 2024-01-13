@@ -26,7 +26,7 @@ const SuiteDetails = () => {
         <div style={{ position: 'relative', width: '1425px' }}>
 
           <section>
-            <div class="slider-wrapper" style={{ maxWidth: '600px', marginRight: '300px' }}>
+            <div class="slider-wrapper" style={{ maxWidth: '600px', marginLeft: '890px' }}>
               <div class="slider">
                 <img id="slide-1" src="/s1.jpg" alt="pic1" />
                 <img id="slide-2" src="/suite2.jpg" alt="pic2" />
