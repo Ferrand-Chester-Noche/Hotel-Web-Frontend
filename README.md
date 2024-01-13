@@ -1,4 +1,8 @@
 CS127 frontend 
+Group 1
+
+
+
 setup notes---------------------------
 - download react devtools for your browser https://react.dev/learn/react-developer-tools
 - install node js https://nodejs.org/en
