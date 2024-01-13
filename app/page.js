@@ -4,6 +4,7 @@ import { useState } from 'react';
 // import { useRouter } from 'next/router';
 import Head from 'next/head';
 import Image from 'next/image';
+import {router} from "next/client";
 
 const LoginPage = () => {
   // const router = useRouter();
@@ -14,49 +15,18 @@ const LoginPage = () => {
   // CONFIGURE API HERE ------------------------------------------------- re-activate line 4, 9 | re-activate line 78 to "<form className="mt-6" onSubmit={handleLogin}>"
   const handleLogin = async (e) => {
     e.preventDefault();
-    const response = await fetch (`http://localhost:8080/employee/login/${email}`, {mode: 'no-cors'})
+    const response = await fetch (`http://localhost:8080/employee/login/${email}`)
     // let found = await response.json()
     const string = await response.text()
     const json = string === "" ? {} : JSON.parse(string)
-    console.log(response)
-    // Current issue: Body of response is empty hence no data,
-    // the API registers that the email is being searched and the result is in the body
-    // but no data is being retrieved by the website
+    console.log(json)
     
-    // try {
-      // const response = await fetch('http://localhost:8080/employee/login/${email}', {
-      //   method: 'GET',
-      //   headers: {
-      //     'Content-Type': 'application/json',
-      //   },
-      //   body: JSON.stringify({ email, password }),
-      // });
-      // const response = await fetch ('http://localhost:8080/employee/login/${email}')
-      // let found = await response.json()
-      // console.log(found)
-
-    //   if (response.ok) {
-    //     const { EMPLOYEE_TYPE } = await response.json();
-    //     if (EMPLOYEE_TYPE === 'Front Desk') {
-    //       router.push('/booking');
-    //     } else if (EMPLOYEE_TYPE === 'Housekeeping') {
-    //       router.push('/servicesmgmt');
-    //     } else if (EMPLOYEE_TYPE === 'Kitchen') {
-    //       router.push('/servicesmgmt');
-    //     } else if (EMPLOYEE_TYPE === 'Concierge') {
-    //       router.push('/servicesmgmt');
-    //     } else if (EMPLOYEE_TYPE === 'Supervisor') {
-    //       router.push('/employeemgmt');
-    //     } else {
-    //       setErrorMessage('Account is invalid');
-    //     }
-    //   } else {
-    //     setErrorMessage('Invalid email or password');
-    //   }
-    // } catch (error) {
-    //   console.error('Login error:', error);
-    //   setErrorMessage('An error occurred during login');
-    // }
+    if (json.password == password) {
+      console.log("success")
+      if (json.employeetypeId == 1) {
+        await router.push('/booking')
+      }
+    }
   };
 
   return (

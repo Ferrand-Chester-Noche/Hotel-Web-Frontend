@@ -29,6 +29,23 @@ const BookNow = () => {
     console.log('Contact Number:', contactNumber);
     console.log('Email Address:', emailAddress);
 
+    let jsonData = {
+      "firstName": firstName,
+      "middleName": middleName,
+      "lastName": lastName,
+      "birthday": birthday,
+      "address": address,
+      "contactNo": contactNumber,
+      "email": emailAddress
+    }
+
+    fetch('http://localhost:8080/guest/newGuest', {
+      method: 'POST',
+      mode: 'no-cors',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(jsonData)
+    })
+
     // You can perform additional actions with the form data here
   };
 
