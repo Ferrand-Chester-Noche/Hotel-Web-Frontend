@@ -4,7 +4,7 @@
 import React, { useState } from 'react';
 import NavbarAdmin from '@/components/navbaradmin';
 import styles from '../../../styles/booking.css'; // Import your CSS file
-import bookingPageStyles from '../../../styles/bookingPageStyles.css'; // Import the new CSS file
+// import bookingPageStyles from '../../../styles/bookingPageStyles.css'; // Import the new CSS file
 
 const ServicesManagementPage = () => {
   // State variables for BRN, charges, and service details
@@ -25,9 +25,9 @@ const ServicesManagementPage = () => {
   };
 
   return (
-    <div className={bookingPageStyles['container-wrapper']}>
+    <div className={styles['container-wrapper']}>
       <NavbarAdmin />
-      <div className={bookingPageStyles['container']}>
+      <div className={styles['container']}>
         <form className={styles['booking-history-form']} onSubmit={handleFormSubmit}>
           <label>
             Enter BRN:
@@ -86,7 +86,7 @@ const ServicesManagementPage = () => {
             </table>
           </div>
 
-          <button className={styles['static-button']} type="submit" style={{ color: 'black' }}>
+          <button className={styles.button} type="submit" style={{ color: 'black' }}>
             Add to Bill
           </button>
         </form>
